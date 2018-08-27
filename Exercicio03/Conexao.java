@@ -11,7 +11,7 @@ public final class Conexao{
     private Connection conn;
     private static Conexao instance;
 
-    public static Conexao getInstance(){
+    public static synchronized Conexao getInstance(){
         if(instance == null){
             instance = new Conexao();
             try {
