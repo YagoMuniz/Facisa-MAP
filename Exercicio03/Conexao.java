@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 public final class Conexao{
 
     private Conexao(){ }
-    private Connection conn;
+    private Connection conn = null;
     private static Conexao instance;
 
     public static synchronized Conexao getInstance(){
