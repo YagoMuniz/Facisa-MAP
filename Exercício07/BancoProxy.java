@@ -1,6 +1,6 @@
 package br.padroes.proxy;
 
-public class BancoProxy implements BancoUsuarios {
+public class BancoProxy extends BancoUsuarios {
 
 	protected String usuario, senha;
 
